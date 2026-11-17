@@ -18,21 +18,20 @@
             --desktop-bg: #008080;
         }
 
-        body {
-            background-color: var(--desktop-bg);
-            /* Upload your wallpaper image to your GitHub repo and name it 'wallpaper.jpg' */
-            /* If the local file isn't found, it falls back to the teal background color */
-            background-image: url('./wallpaper.jpg');
-            background-size: cover;
-            background-position: center;
-            font-family: 'MS Sans Serif', 'Tahoma', 'Verdana', sans-serif;
-            color: var(--win-text);
-            margin: 0;
-            padding: 0;
-            overflow: hidden; /* Keep it acting like a desktop */
-            user-select: none;
-            -webkit-user-select: none;
-        }
+body {
+    background-color: var(--desktop-bg);
+    background-image: url('./wallpaper.jpg');
+    background-repeat: repeat;      /* tile in both directions */
+    background-position: top left;  /* start tiling from the corner, like Windows 95/98 */
+    /* background-size removed so the image keeps its native size */
+    font-family: 'MS Sans Serif', 'Tahoma', 'Verdana', sans-serif;
+    color: var(--win-text);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+}
 
         /* Y2K Pixel Font for specific elements like the music player */
         .pixel-font {
